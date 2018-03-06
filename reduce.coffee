@@ -89,6 +89,20 @@ num = str.split('').reduce (r, c) =>
   else r[c] = 1
   r
 , {}
-console.log num #{ a: 3, b: 2, c: 2, d: 1 }
+console.log num # { a: 3, b: 2, c: 2, d: 1 }
 
+# 返回key-value的形式
+classes = [
+  'a'
+  'b'
+  'c'
+]
 
+allClasses = classes.reduce (r, c) =>
+  {
+    r...
+    "#{c}"
+  }
+, {}
+
+console.log allClasses # { a: 'a', b: 'b', c: 'c' }
